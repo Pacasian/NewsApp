@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ac"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="60dp"
+        android:background="@drawable/bordered_rectangle"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+
+            android:background="@drawable/icon_mail_grevience"
+            />
+
+        <TextView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:textColor="@color/Red"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+
+            android:text="haoindfkbsdiuhfn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtTitle"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:maxLength="30"
+            android:gravity="center|left"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/txtBrief"
+            android:text="fbuygbsdfn mgysdgfb"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            android:textColor="@color/Red"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    android:scaleType="centerCrop"
+ -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="0dp"
+                android:background="#ccc"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Show Title"
+                    android:id="@+id/txtTitle"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBrief"
+                    android:text="Show News body"
+                    android:textColor="#555" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
